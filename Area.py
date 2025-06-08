@@ -8,6 +8,8 @@ if value == 'R':
     answer = (width_height.split(','))
     width = (float(answer[0]))
     height = (float(answer[1]))
+    area_rectangle = width*height
+    print('The area of a rectangle with width', width, 'and height',height,'is:',area_rectangle)
 elif value == 'r':
     width_height = (input('Please enter width and height of the rectangle separated by comma: '))
     answer = (width_height.split(','))
