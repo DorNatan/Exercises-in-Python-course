@@ -3,9 +3,9 @@
 
 from csv import reader
 
-opened_file = open('AppleStore.csv', encoding='utf8')
-read_file = reader(opened_file)
-apps_data = list(read_file)
+with open('AppleStore.csv', encoding='utf8') as opened_file:
+    read_file = reader(opened_file)
+    apps_data = list(read_file)
 
 
 def extract(col):         #פונקציה שמקבלת מספר עמודה ומחזירה רשימה של כל הערכים באותה עמודה
@@ -14,7 +14,6 @@ def extract(col):         #פונקציה שמקבלת מספר עמודה ומ�
         x = row[col]
         list.append(x)
     return list
-    opened_file.close()                        #הפונקציה סוגרת את הקובץ לשימוש חוזר,כל המידע הנדרש נאסף
 
 
 numberofcol = int(input("insert a number of col,please: "))
@@ -36,7 +35,7 @@ print('frequency table : ', '\n', freq)
 
 
 def freq_table_gen(colIndex):                      #פונקציה שמשתמשת בשתי הפונקציות הקודמות כדי ליצור טבלת תדירויות ובנוסף מחזירה את הערך הכי גבוה מתוך המילון
-    mylist = extract(index)
+    mylist = extract(colIndex)
     frequency = freq_table(mylist)
     mostPopular = max(frequency, key=frequency.get)
     return frequency, mostPopular
