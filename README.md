@@ -1,15 +1,19 @@
-# Exercises in Data Analysis Class
+# Python Exercise Scripts
 
-This repository contains a collection of Jupyter notebooks used in a data analysis course. Each notebook explores a different public dataset and demonstrates techniques using pandas, matplotlib and seaborn.
+This repository contains standalone Python scripts used for practice in a programming course. Each file is a small exercise that can be run from the command line.
 
-## Notebooks
+## Examples
 
-- `exercise1.ipynb` – first exercise analyzing COVID‑19 vaccination data.
-- `exercise1_hebrew.ipynb` – Hebrew version of exercise 1.
-- `exercise2_answers.ipynb` – solutions for a second exercise using the COVID dataset.
-- `exercise3.ipynb` – YouTube statistics exploration.
-- `exercise4.ipynb` – introductory work with the NBA player dataset.
-- `exercise4_final.ipynb` – final version of the NBA analysis.
-- `assignment4.ipynb` – additional NBA analysis assignment.
+- `Hello.py.py` – asks for your name and prints a greeting.
+- `Area.py` – calculates the area of a rectangle or circle based on user input.
+- `RandomInt.py` – generates random numbers within user‑defined ranges.
+- `HigherThan10.py` – collects numbers greater than 10 until you enter -1.
+- `hourglass.py` – prints a star shaped hourglass pattern.
 
-Each notebook can be opened with Jupyter to reproduce the analysis and visualizations.
+To run any exercise, execute:
+
+```bash
+python <filename.py>
+```
+
+Each script expects any required input via the terminal.
